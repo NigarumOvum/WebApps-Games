@@ -1,0 +1,67 @@
+/* ---- reset ---- */
+
+* {
+    background-color: rgb(0, 0, 0); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    text-shadow: 30 20 10 rgb(11, 175, 224);
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: center;
+    font-family: cursive;
+ }
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    text-align: center;
+    color: rgba(0, 183, 255, 0.658);
+  }
+
+p {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  }
+
+hr {
+  width: 70%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, 0.75), rgb(255, 255, 255));
+  }
+
+
+/* Collapsible */
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #000000;
+}

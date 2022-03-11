@@ -1,0 +1,81 @@
+* {
+  overscroll-behavior: contain;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+
+  overflow: hidden;
+  margin: 0 auto;
+}
+.canvas-container {
+  width: calc(100vmin - 4rem);
+  height: calc(100vmin - 7rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.canvas-container:after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.6;
+  transition: 0.25s ease;
+  pointer-events: none;
+}
+.canvas-container > button {
+  position: fixed;
+  position: absolute;
+  z-index: 1;
+}
+.canvas-container.is-active:after {
+  opacity: 0;
+}
+.canvas-container.is-active > button {
+  transform: scale(0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+.canvas-container > canvas {
+  width: 100%;
+  height: 100%;
+  border-radius: 1px;
+  border: 1px solid transparent;
+  transition: 0.25s ease;
+}
+.canvas-container > canvas:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem #69aac9;
+  border-color: #69aac9;
+}
+.score {
+  color: white;
+  font-size: 200%;
+  margin-bottom: 1rem;
+}
+button {
+  color: white;
+  background-color: #69aac9;
+  padding: 1rem 2rem;
+  font-size: 200%;
+  border: 0px solid white;
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.25s ease;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: inherit;
+}

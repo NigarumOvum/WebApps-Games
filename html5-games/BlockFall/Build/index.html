@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .noselect {
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Old versions of Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none;
+      /* Non-prefixed version, currently
+                                        supported by Chrome, Opera and Firefox */
+    }
+  </style>
+  <meta charset="utf-8" />
+  <title>Block Fall</title>
+  <style type="text/css">
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+
+  <script src="LocaleHandler.js"></script>
+  <script src="WortalAd.js"></script>
+</head>
+
+<body style="background-color:white;">
+  <div style="text-align: center; width: 95%;">
+    <H1 id="score" class="i18nElem score noselect">taptostart</H1>
+    <canvas id="gameCanvas" width="175" height="350"></canvas>
+    <script src='js/Game.js'></script>
+  </div>
+</body>
+
+</html>

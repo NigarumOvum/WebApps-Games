@@ -141,11 +141,4 @@ app.innerHTML = `<div class="container">
     </div>
     </div>
     </div>
-<div id="footer">
-    <div class="container text-center">
-        <div class="fnav">
-            <p class="gradient">Copyright &copy; 2021. Designed by <a href="https://neighbordevcr.com"
-                    rel="nofollow">NeighborDev CR.</a></p>
-        </div>
-    </div>
-</div>`
+`

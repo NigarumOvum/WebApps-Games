@@ -1,10 +1,35 @@
-import './style.css'
+import "./style.css";
 
-const app = document.querySelector<HTMLDivElement>('#app')!
+const app = document.querySelector<HTMLDivElement>("#app")!;
 
-app.innerHTML = `<div class="container">
+app.innerHTML = `
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">Web Apps</a></li>
+    <li><a href="#news">Juegos</a></li>
 
+  <li><a href="#contact">Contacto</a></li>
+  <li style="float:right"><a class="active" href="https://brealypadronrodriguez.vercel.app/">Portfolio</a></li>
+</ul>
+<div class="container">
+
+<div class="hero">
+    <h1 class="texto">
+        Me llamo Brealy Padron
+    </h1>
+</div>
+        <div class="container">
+            <div class="section-title center">
+                <h1>
+                    <p style="text-align:center;"> <img
+                            src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/source.gif" width="300" height="300">
+                    </p>
+                </h1>
+
+
+            </div>
         <button type="button" class="collapsible">
+
             <h1> Aplicaciones Web </h1>
         </button>
         <div class="content container">
@@ -39,8 +64,7 @@ app.innerHTML = `<div class="container">
         <div class="content container ">
             <p style="text-align:center;"> <a href="html5-games/0hn0/Build/index.html"
                     class="btn btn-custom btn-lg page-scroll"> 0hn0 </a> </p>
-            <p style="text-align:center;"> <a href="html5-games/3dchest/index.html"
-                    class="btn btn-custom btn-lg page-scroll"> 3D Chess </a> </p>
+
             <p style="text-align:center;"> <a href="html5-games/Align-4-Game/Build/index.html"
                     class="btn btn-custom btn-lg page-scroll"> Align 4 Game</a> </p>
             <p style="text-align:center;"> <a href="html5-games/BlockFall/Build/index.html"
@@ -56,8 +80,7 @@ app.innerHTML = `<div class="container">
 
             <p style="text-align:center;"> <a href="html5-games/Coil/Build/index.html"
                     class="btn btn-custom btn-lg page-scroll"> Coil </a> </p>
-            <p style="text-align:center;"> <a href="html5-games/clashjs/public/index.html"
-                    class="btn btn-custom btn-lg page-scroll"> Clash </a> </p>
+
             <p style="text-align:center;"> <a href="html5-games/ColorMatch/build/index.html"
                     class="btn btn-custom btn-lg page-scroll"> Color Match </a> </p>
             <p style="text-align:center;"> <a href="html5-games/emoji-minesweeper/build/index.html"
@@ -96,8 +119,7 @@ app.innerHTML = `<div class="container">
                     class="btn btn-custom btn-lg page-scroll"> Space Invaders (PC)</a> </p>
             <p style="text-align:center;"> <a href="html5-games/tic-tac-toe/dist/index.html"
                     class="btn btn-custom btn-lg page-scroll">Tic Tac Toe</a> </p>
-            <p style="text-align:center;"> <a href="html5-games/canvas-tetris/index.html"
-                    class="btn btn-custom btn-lg page-scroll"> Tetris </a> </p>
+
             <p style="text-align:center;"> <a href="html5-games/TowerBlocks/build/index.html"
                     class="btn btn-custom btn-lg page-scroll"> TowerBlocks </a> </p>
             <p style="text-align:center;"> <a href="Apps/javascript/Whack-a-mole/index-FINISHED.html"
@@ -116,17 +138,9 @@ app.innerHTML = `<div class="container">
 
     <!-- Contact Section -->
     <div id="contact" class="text-center">
-        <div class="container">
-            <div class="section-title center">
-                <h1>
-                    <p style="text-align:center;"> <img
-                            src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/source.gif" width="300" height="300">
-                    </p>
-                </h1>
 
-                <h2>Contacto</h2>
+                            <h1>Contacto</h1>
                 <hr>
-            </div>
             <div class="social">
                 <a href="https://wa.me/50671127802"><i class="fa fa-whatsapp"
                         style="font-size:48px;color:white"></i></a></li>
@@ -141,4 +155,4 @@ app.innerHTML = `<div class="container">
     </div>
     </div>
     </div>
-`
+`;
